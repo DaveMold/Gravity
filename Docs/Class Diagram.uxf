@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>9</zoom_level>
+  <zoom_level>11</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>18</x>
+      <x>726</x>
       <y>0</y>
-      <w>189</w>
-      <h>72</h>
+      <w>231</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>_Game_
 --
@@ -20,10 +20,10 @@ gameState enum
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>333</x>
+      <x>1111</x>
       <y>0</y>
-      <w>189</w>
-      <h>99</h>
+      <w>231</w>
+      <h>121</h>
     </coordinates>
     <panel_attributes>_InputMgr_
 --
@@ -38,25 +38,29 @@ KeyHold()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>18</x>
-      <y>603</y>
-      <w>189</w>
-      <h>72</h>
+      <x>561</x>
+      <y>781</y>
+      <w>231</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>_GameEntity : Player_
 --
+Player()
 score
 lives
-isAlive</panel_attributes>
+isAlive
+GetLives()
+SetLives()
+IsLive()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>9</x>
-      <y>378</y>
-      <w>189</w>
-      <h>153</h>
+      <x>715</x>
+      <y>517</y>
+      <w>231</w>
+      <h>187</h>
     </coordinates>
     <panel_attributes>_GameEntity_
 --
@@ -75,10 +79,10 @@ Draw()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>18</x>
-      <y>153</y>
-      <w>189</w>
-      <h>144</h>
+      <x>726</x>
+      <y>187</y>
+      <w>231</w>
+      <h>176</h>
     </coordinates>
     <panel_attributes>_Level_
 --
@@ -95,10 +99,10 @@ Draw()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>342</x>
-      <y>432</y>
-      <w>198</w>
-      <h>72</h>
+      <x>1100</x>
+      <y>583</y>
+      <w>242</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>_CollisionMgr_
 --
@@ -110,10 +114,10 @@ SAT(Object1, Object2)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>333</x>
-      <y>189</y>
-      <w>189</w>
-      <h>99</h>
+      <x>1089</x>
+      <y>407</y>
+      <w>231</w>
+      <h>121</h>
     </coordinates>
     <panel_attributes>_ForceMgr_
 --
@@ -127,13 +131,14 @@ Draw()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>234</x>
-      <y>621</y>
-      <w>189</w>
-      <h>72</h>
+      <x>913</x>
+      <y>792</y>
+      <w>231</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>_GameEntity : Wall_
 --
+Wall()
 returnPos
 returnForce
 CalculateReturnForce()
@@ -144,10 +149,10 @@ CalculateReturnForce()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>99</x>
-      <y>63</y>
-      <w>72</w>
-      <h>108</h>
+      <x>825</x>
+      <y>77</y>
+      <w>88</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
@@ -158,52 +163,52 @@ Has a &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>90</x>
-      <y>288</y>
-      <w>72</w>
-      <h>108</h>
+      <x>814</x>
+      <y>352</y>
+      <w>88</w>
+      <h>187</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
 m2=1
 Has a &gt;</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>522</y>
-      <w>81</w>
-      <h>99</h>
+      <x>671</x>
+      <y>693</y>
+      <w>198</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1
 &lt; Child of</panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;10.0;50.0;160.0;50.0;160.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
-      <y>522</y>
-      <w>189</w>
-      <h>117</h>
+      <x>924</x>
+      <y>693</y>
+      <w>154</w>
+      <h>121</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
 m2=1
 &lt; Child of</panel_attributes>
-    <additional_attributes>170.0;110.0;170.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
+    <additional_attributes>100.0;90.0;100.0;20.0;10.0;20.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>198</x>
-      <y>18</y>
-      <w>153</w>
-      <h>45</h>
+      <x>946</x>
+      <y>22</y>
+      <w>187</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -214,29 +219,95 @@ Has a &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>459</y>
-      <w>171</w>
-      <h>45</h>
+      <x>935</x>
+      <y>616</y>
+      <w>187</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1
 Has a &gt;</panel_attributes>
-    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>207</y>
-      <w>162</w>
-      <h>225</h>
+      <x>935</x>
+      <y>429</y>
+      <w>176</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1
 Has a &gt;</panel_attributes>
-    <additional_attributes>160.0;10.0;70.0;10.0;70.0;220.0;10.0;220.0</additional_attributes>
+    <additional_attributes>140.0;10.0;60.0;10.0;60.0;110.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>374</x>
+      <y>55</y>
+      <w>231</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>_Menu_
+--
+Menu()
+List&lt;MenueElement&gt;
+Up()
+Down()
+Select()
+Return()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>264</y>
+      <w>231</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>_MenuElement_
+--
+selected
+text
+highlightText
+pos
+Update()
+SetPos()
+GetPos()
+Draw()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>33</y>
+      <w>154</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+&lt; Has a</panel_attributes>
+    <additional_attributes>120.0;10.0;40.0;10.0;40.0;60.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>187</y>
+      <w>121</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+&lt; Has a</panel_attributes>
+    <additional_attributes>40.0;10.0;40.0;120.0;10.0;120.0</additional_attributes>
   </element>
 </diagram>
