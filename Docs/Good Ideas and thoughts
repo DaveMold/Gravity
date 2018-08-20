@@ -1,0 +1,33 @@
+Force Manager
+
+
+
+
+Force
+  std::Vector<Vector2f> forces;
+  int timetolive; // if(ttl == -1) = alive forever, if (ttl == 0) = kill, if(ttl > 0) = alive to ttl-0 ticks.
+  GameEntity * entityPtr;
+  
+  Force::Froce(int ttl, GameEntity * entity){
+    entityPtr = entity;
+    timetolive = ttl;
+  }
+  Force::~Force(){
+  }
+  bool IsAlive(){
+    if(timetolive > 0 || timetolive == -1){
+      return true;
+    }
+    else{
+     return false;
+    }
+  }
+  Update(){
+    entityPtr->ApplyForce(force);
+  }
+  ApplyForce(sf::vector2f f){
+    forces.pushback(f);
+  }
+  GameEntity * GetEntity(){
+    return entityPtr;
+  }
